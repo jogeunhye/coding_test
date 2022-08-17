@@ -1,0 +1,5 @@
+<form method="POST" enctype="multipart/form-data" action="{% url 'board:new' %}">{% csrf_token %}
+<input type="text" maxlength="100" name="title" id="id_title">
+<textarea name="content" id="id_content"></textarea>
+<button type="submit">등록</button>
+</form>
